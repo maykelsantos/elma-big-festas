@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Visite a loja · Elma Big Festas</title>
+<meta name="description" content="Endereço, mapa, horários da loja e do atendimento online da Elma Big Festas no Garapu, Cabo de Santo Agostinho - PE.">
+<meta name="theme-color" content="#1F7BF2">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contato">
+<div id="header"></div>
+<main>
+  <section class="topo">
+    <span class="balao balao--verde"></span><span class="balao balao--amarelo"></span>
+    <div class="container topo__inner">
+      <span class="pill pill--claro">Visite a loja</span>
+      <h1>Venha pra <span class="mao" style="color:var(--amarelo)">Elma!</span></h1>
+      <p class="lead">No Garapu, Cabo de Santo Agostinho. Aberta todos os dias, até domingo de manhã.</p>
+    </div>
+    <svg class="onda" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 360 110 1080 -10 1440 50 V90 H0Z" fill="currentColor"/></svg>
+  </section>
+  <section class="sec" style="padding-top:24px">
+    <div class="container contato">
+      <div style="display:grid;gap:24px;align-content:start">
+        <div class="bloco">
+          <h2 data-icon="pin">Endereço</h2>
+          <p data-endereco></p>
+          <div class="btns">
+            <a class="btn btn--azul btn--sm" data-link="mapa" href="#">Abrir no Google Maps</a>
+            <a class="btn btn--contorno btn--sm" data-link="waze" href="#">Ir com Waze</a>
+          </div>
+        </div>
+        <div class="bloco">
+          <h2 data-icon="loja">Loja física</h2>
+          <p data-status></p>
+          <table class="horarios"><tbody data-hours="loja"></tbody></table>
+        </div>
+        <div class="bloco">
+          <h2 data-icon="chat">Atendimento online</h2>
+          <p data-status-online></p>
+          <table class="horarios"><tbody data-hours="online"></tbody></table>
+          <p class="nota" style="margin-top:12px">Pelo WhatsApp <a data-link="conversa" href="#">(81) 99339-3896</a>. <span class="placeholder">[entrega: bairros e taxa]</span> <span class="placeholder">[formas de pagamento]</span></p>
+          <div class="btns" style="margin-top:14px"><a class="btn btn--whats btn--sm" data-link="conversa" data-icon="whats" href="#">Chamar no WhatsApp</a><a class="btn btn--contorno btn--sm" data-link="instagram" data-icon="insta" href="#">Instagram</a></div>
+        </div>
+      </div>
+      <div class="mapa" data-map></div>
+    </div>
+  </section>
+</main>
+<div id="footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

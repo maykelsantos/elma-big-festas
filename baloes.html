@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Balão personalizado · Elma Big Festas</title>
+<meta name="description" content="Monte seu balão personalizado com nome, cor e formato e encomende pelo WhatsApp na Elma Big Festas.">
+<meta name="theme-color" content="#1F7BF2">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="baloes">
+<div id="header"></div>
+<main>
+  <section class="topo">
+    <span class="balao balao--aqua"></span><span class="balao balao--amarelo"></span>
+    <div class="container topo__inner">
+      <span class="pill pill--claro">Balão personalizado</span>
+      <h1>Seu balão <span class="mao" style="color:var(--amarelo)">dos sonhos</span></h1>
+      <p class="lead">Escolha o formato, a cor e o nome. Veja como fica e envie o pedido pelo WhatsApp.</p>
+    </div>
+    <svg class="onda" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C 360 110 1080 -10 1440 50 V90 H0Z" fill="currentColor"/></svg>
+  </section>
+  <section class="sec" style="padding-top:24px">
+    <div class="container perso">
+      <div class="perso__palco">
+        <div class="prev" data-forma="estrela" aria-hidden="true">
+          <div class="prev__forma"><span class="prev__txt">Seu nome</span><span class="prev__num">5</span></div>
+        </div>
+        <p class="perso__aviso">Ilustração. O balão real depende dos modelos e das cores disponíveis na loja.</p>
+      </div>
+      <form class="opcoes" data-perso onsubmit="return false">
+        <div class="grupo"><h3>Formato</h3><div class="radios" data-formatos></div></div>
+        <div class="grupo"><h3>Cor</h3><div class="radios cores" data-cores></div></div>
+        <label class="campo" data-campo-numero hidden>Número<input name="numero" type="text" inputmode="numeric" maxlength="2" placeholder="Ex.: 5"></label>
+        <div class="duas">
+          <label class="campo">Nome<input name="nome" type="text" maxlength="24" placeholder="Ex.: Davi Luiz"></label>
+          <label class="campo">Frase (opcional)<input name="frase" type="text" maxlength="30" placeholder="Ex.: Feliz aniversário"></label>
+        </div>
+        <div class="duas">
+          <label class="campo">Quantidade<input name="qtd" type="number" min="1" max="99" value="1"></label>
+          <label class="campo">Para o dia<input name="data" type="date"></label>
+        </div>
+        <div class="radios"><input type="checkbox" name="helio" id="helio" checked><label for="helio">Com gás hélio</label></div>
+        <label class="campo">Observações<textarea name="obs" rows="3" placeholder="Ex.: quero junto um buquê com 5 balões azuis"></textarea></label>
+        <a class="btn btn--whats" data-p-enviar target="_blank" rel="noopener" data-icon="whats" href="#">Encomendar no WhatsApp</a>
+        <p class="nota">A Elma confirma o valor, o prazo e os modelos disponíveis na conversa.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<div id="footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
